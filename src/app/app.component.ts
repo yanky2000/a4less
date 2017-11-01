@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  public AppTitle = "It's my app!";
+
+  constructor() {
+    // setTimeout(() => {
+    //   this.title = "New heading for main page!";
+    // }, 2000);
+  }
 }

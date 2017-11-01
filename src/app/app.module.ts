@@ -1,14 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { MatToolbarModule } from '@angular/material';
 
-@NgModule({
+import { AppComponent } from './app.component';
+import { SearchModule } from './search/search.module';
+import { HeaderComponent } from './header/header.component';
+import { HelpComponent } from './help/help.component';
+
+@NgModule({ 
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HelpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatToolbarModule, 
+    SearchModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
