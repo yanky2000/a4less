@@ -2,7 +2,7 @@
     <mat-form-field class="example-full-width">
         <input matInput 
             [placeholder]="placeholder" 
-            (input)="search($event.target.value)">
+            (input)="search.emit($event.target.value)">
     </mat-form-field>
 </form>
 

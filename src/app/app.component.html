@@ -1,4 +1,6 @@
 <app-header>
     <img [src]="logo" [alt]="title" [attr.width.px]="width">
-    <app-search [placeholder]='placeholder'></app-search>  
+    <app-search [placeholder]="placeholder" (search)="searchTerm = $event"></app-search>  
 </app-header>
+{{searchTerm}}
+
