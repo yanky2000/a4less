@@ -11,6 +11,10 @@ export class SearchComponent {
   @Input()
   public placeholder: string;
 
+  public search(value) {
+    console.log(value)
+  }
+
   // constructor() {
   // }
 
