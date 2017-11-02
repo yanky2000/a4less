@@ -1,2 +1,9 @@
-<input type="text" #searchRef (input)=input()>
-{{searchRef.value}}
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <!-- <input matInput placeholder="placeholder" (input)=input()> -->
+        <input matInput [placeholder]="placeholder" (input)=input()>
+    </mat-form-field>
+</form>
+
+<!-- <input type="text" #searchRef (input)=input()>
+{{searchRef.value}} -->

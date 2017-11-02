@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public AppTitle = "It's my app!";
+  public title = 'Its my app!';
+  public logo: string = 'assets/images/logo.jpg';
+  public width: number = 70;
+  public placeholder: string = 'enter your name';
+
 
   constructor() {
-    // setTimeout(() => {
-    //   this.title = "New heading for main page!";
-    // }, 2000);
   }
 }
