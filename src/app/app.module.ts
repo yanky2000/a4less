@@ -7,12 +7,14 @@ import { MatInputModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { SearchModule } from './search/search.module';
 import { HeaderComponent } from './header/header.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    UserListComponent,
 
   ],
   imports: [
