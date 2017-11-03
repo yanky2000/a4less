@@ -1,0 +1,20 @@
+.widget_container{
+    display: flex;
+};
+
+.widgets_block{
+
+}
+
+.iq-box-container{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    
+}
+
+.user-card-container{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}

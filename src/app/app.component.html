@@ -1,17 +1,20 @@
 <app-header>
     <img [src]="logo" [alt]="title" [attr.width.px]="width">
-    <app-search [placeholder]="placeholder" (search)="searchTerm = $event"></app-search>  
+    <app-search [placeholder]="placeholder" (search)="searchTerm = $event"></app-search>
 </app-header>
-<<<<<<< HEAD
 
-<app-user-list 
-    [user1]='user1'
-    [user2]='user2'
-    [user3]='user3'
-    [user4]='user4'
-    >
-</app-user-list>
-=======
-{{searchTerm}}
+<div class="widget_container">
+    <app-user-list 
+        [user1]='user1' 
+        [user2]='user2' 
+        [user3]='user3' 
+        [user4]='user4'
+        (choice)="currentUser=$event"
+        >
+    </app-user-list>
 
->>>>>>> d74c83e947555888413f9b3fbb5dd0ea9859bd4e
+    <div class="widgets_block">
+        <app-iq-box class="iq-box-container" [user]='currentUser'></app-iq-box>
+        <app-user-card class="user-card-container" [user]='currentUser'></app-user-card>
+    </div>
+</div>

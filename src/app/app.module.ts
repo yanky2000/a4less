@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { SearchModule } from './search/search.module';
 import { HeaderComponent } from './header/header.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { UserCardComponent } from './user-card/user-card.component';
+import { IqBoxComponent } from './iq-box/iq-box.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { UserListComponent } from './user-list/user-list.component';
     AppComponent,
     HeaderComponent,
     UserListComponent,
+    UserCardComponent,
+    IqBoxComponent,
 
   ],
   imports: [

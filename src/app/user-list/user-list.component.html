@@ -1,20 +1,16 @@
-<p>
-  user-list works!
-</p>
-
-<p>
-    <img [src]="user1.photo" alt="">
+<p (mouseover)="choice.emit(user1)">
+    <img [src]="user1.photo" [attr.width.px]='width' alt="">
     {{user1.firstName}}
 </p>
-<p>
-    <img [src]="user2.photo" alt="">
+<p (mouseover)="choice.emit(user2)">
+    <img [src]="user2.photo" [attr.width.px]='width' alt="">
     {{user2.firstName}}
 </p>
-<p>
-    <img [src]="user3.photo" alt="">
+<p (mouseover)="choice.emit(user3)">
+    <img [src]="user3.photo" [attr.width.px]='width' alt="">
     {{user3.firstName}}
 </p>
-<p>
-    <img [src]="user4.photo" alt="">
-    {{user4.firstName}}
+<p (mouseover)="choice.emit(user4)">
+    <img [src]="user4.photo" [attr.width.px]='width' alt="">
+            {{user4.firstName}}
 </p>

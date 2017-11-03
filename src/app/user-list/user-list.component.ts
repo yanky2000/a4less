@@ -1,4 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  EventEmitter,
+} from '@angular/core';
 
 @Component({
   selector: 'app-user-list',
@@ -20,9 +26,19 @@ export class UserListComponent implements OnInit {
   @Input()
   public user4;
 
+  @Output()
+  public choice = new EventEmitter();
+
+  public width: number = 150;
+  public currentUser;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  public setCurrentUser(user): void {
+    this.currentUser = user;
+    console.log(user);
+  }
 }

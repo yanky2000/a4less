@@ -7,17 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public title = 'Its my app!';
+  public title: string = 'Its my app!';
   public logo: string = 'assets/images/logo.jpg';
   public width: number = 70;
   public placeholder: string = 'enter your name';
-  public test = 'testing';
 
   public user1: user = {
+    id: 1,
     firstName: 'Mary',
     lastName: 'Doe',
     age: 34,
     sex: 'Female',
+    iq: 170,
     photo: 'assets/images/user1.jpg',
     location: {
       city: 'NY',
@@ -25,10 +26,12 @@ export class AppComponent {
     }
   };
   public user2: user = {
+    id: 2,
     firstName: 'John',
     lastName: 'Doe',
     age: 34,
     sex: 'Male',
+    iq: 155,
     photo: 'assets/images/user2.jpg',
     location: {
       city: 'NY',
@@ -36,10 +39,12 @@ export class AppComponent {
     }
   };
   public user3: user = {
+    id: 3,
     firstName: 'Lizy',
     lastName: 'Dodson',
     age: 24,
     sex: 'Female',
+    iq: 200,
     photo: 'assets/images/user3.jpg',
     location: {
       city: 'LA',
@@ -47,10 +52,12 @@ export class AppComponent {
     }
   };
   public user4: user = {
+    id: 4,
     firstName: 'Carl',
     lastName: 'Jenkins',
     age: 28,
     sex: 'Male',
+    iq: 186,
     photo: 'assets/images/user4.jpg',
     location: {
       city: 'SF',
@@ -58,7 +65,7 @@ export class AppComponent {
     }
   };
 
-
+  public currentUser: user = this.user1;
 
 
 
