@@ -1,8 +1,8 @@
 <app-header>
     <img [src]="logo" [alt]="title" [attr.width.px]="width">
-    <app-search [placeholder]='placeholder'></app-search>
-    
+    <app-search [placeholder]="placeholder" (search)="searchTerm = $event"></app-search>  
 </app-header>
+<<<<<<< HEAD
 
 <app-user-list 
     [user1]='user1'
@@ -11,3 +11,7 @@
     [user4]='user4'
     >
 </app-user-list>
+=======
+{{searchTerm}}
+
+>>>>>>> d74c83e947555888413f9b3fbb5dd0ea9859bd4e
