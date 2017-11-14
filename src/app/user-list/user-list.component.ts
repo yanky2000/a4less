@@ -15,16 +15,14 @@ import {
 export class UserListComponent implements OnInit {
 
   @Input()
-  public user1;
+  public user:User;
 
   @Input()
-  public user2;
-
+  public position: number;
+  
   @Input()
-  public user3;
+  public isOdd:boolean;
 
-  @Input()
-  public user4;
 
   @Output()
   public choice = new EventEmitter();

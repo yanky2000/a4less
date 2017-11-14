@@ -4,19 +4,18 @@
 </app-header>
 
 <div class="widget_container">
-    <app-user-list 
-        [user1]='user1' 
-        [user2]='user2' 
-        [user3]='user3' 
-        [user4]='user4'
+    <app-user-list
+        *ngFor='let user of users; let i=index; let isOdd=odd'
         (choice)="currentUser=$event"
+        [user]='user'
+        [position]="i+1"
+        [isOdd]='isOdd'
         >
     </app-user-list>
-
+<!--
     <div class="widgets_block">
         <app-iq-box class="iq-box-container" [user]='currentUser'></app-iq-box>
         <app-user-card class="user-card-container" [user]='currentUser'></app-user-card>
-    </div>
+    </div>-->
 
 </div>
-

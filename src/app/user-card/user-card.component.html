@@ -1,6 +1,12 @@
-<h1 [ngClass]="{second:blueClassIsOn}">{{user.firstName}}</h1>
+<mat-card class="example-card" [ngClass]='{background:isOdd}'>
+  <mat-card-header>
+    <div class="name">{{position}}.</div>
+    <img class="avatar" mat-card-image [src]="user.photo">
+    <div class="name">{{user.first_name}} {{user.last_name}}</div>
 
-<p>
-    {{user.lastName}}
-</p>
-{{user.age}} {{user.location.city}}
+  </mat-card-header>
+  <mat-card-content>
+  </mat-card-content>
+</mat-card>
+
+<!--<div class="background">hello!</div>-->

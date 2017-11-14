@@ -6,3 +6,20 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     color: blue;
 }
+
+.avatar{
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+}
+
+.name {
+    line-height: 1.5;
+    margin: 0 20px;
+}
+
+.background{
+    background-color: blue;
+    color: blue;
+
+}

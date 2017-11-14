@@ -11,7 +11,7 @@ export class IqBoxComponent implements OnInit {
   // public user1:user;
 
   @Input()
-  public user: user;
+  public user: User;
 
 
 

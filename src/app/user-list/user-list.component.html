@@ -1,16 +1,1 @@
-<p (mouseover)="choice.emit(user1)">
-    <img [src]="user1.photo" [attr.width.px]='width' alt="">
-    {{user1.firstName}}
-</p>
-<p (mouseover)="choice.emit(user2)">
-    <img [src]="user2.photo" [attr.width.px]='width' alt="">
-    {{user2.firstName}}
-</p>
-<p (mouseover)="choice.emit(user3)">
-    <img [src]="user3.photo" [attr.width.px]='width' alt="">
-    {{user3.firstName}}
-</p>
-<p (mouseover)="choice.emit(user4)">
-    <img [src]="user4.photo" [attr.width.px]='width' alt="">
-            {{user4.firstName}}
-</p>
+<app-user-card [user]='user' [position]='position' [isOdd]='isOdd'></app-user-card>

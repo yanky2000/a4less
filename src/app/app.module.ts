@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { MatToolbarModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
+import { MatCardModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { SearchModule } from './search/search.module';
