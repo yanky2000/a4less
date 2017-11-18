@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   Input,
   Output,
   EventEmitter,
@@ -12,31 +11,26 @@ import {
   styleUrls: ['./user-list.component.css'],
 })
 
-export class UserListComponent implements OnInit {
+export class UserListComponent   {
 
   @Input()
-  public user:User;
+  public user: User;
 
   @Input()
   public position: number;
-  
-  @Input()
-  public isOdd:boolean;
 
+  @Input()
+  public isOdd: boolean;
 
   @Output()
-  public choice = new EventEmitter();
+  public userSelected = new EventEmitter();
+
 
   public width: number = 150;
-  public currentUser;
+  public currentUser: User;
 
-  constructor() { }
 
-  ngOnInit() {
-  }
-
-  public setCurrentUser(user): void {
-    this.currentUser = user;
-    console.log(user);
+  public setCurrentUser(user: User): void {
+    this.userSelected.emit(user);
   }
 }

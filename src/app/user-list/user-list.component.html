@@ -1,1 +1,6 @@
-<app-user-card [user]='user' [position]='position' [isOdd]='isOdd'></app-user-card>
+<app-user-card 
+    [user]='user' 
+    [position]='position' 
+    [isOdd]='isOdd'
+    (click)='setCurrentUser(user)'>
+</app-user-card>

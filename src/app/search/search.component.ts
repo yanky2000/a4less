@@ -12,6 +12,6 @@ export class SearchComponent {
   public placeholder: string;
 
   @Output()
-  public search:EventEmitter<string> = new EventEmitter();
+  public search: EventEmitter<string> = new EventEmitter();
 
 }

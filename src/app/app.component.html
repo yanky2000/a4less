@@ -3,19 +3,18 @@
     <app-search [placeholder]="placeholder" (search)="searchTerm = $event"></app-search>
 </app-header>
 
+
 <div class="widget_container">
-    <app-user-list
-        *ngFor='let user of users; let i=index; let isOdd=odd'
-        (choice)="currentUser=$event"
-        [user]='user'
-        [position]="i+1"
-        [isOdd]='isOdd'
-        >
-    </app-user-list>
-<!--
+
     <div class="widgets_block">
         <app-iq-box class="iq-box-container" [user]='currentUser'></app-iq-box>
         <app-user-card class="user-card-container" [user]='currentUser'></app-user-card>
-    </div>-->
+    </div>
+    <hr>
+    <app-user-list *ngFor='let user of (users | async | userFilter:searchTerm) let i=index; let isOdd=odd' 
+        (userSelected)="currentUser=$event" 
+        [user]='user' [position]="i+1"
+        [isOdd]='isOdd'>
+    </app-user-list>
 
 </div>

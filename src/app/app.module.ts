@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { IqBoxComponent } from './iq-box/iq-box.component';
+import { UserFilterPipe } from './common/pipes/user-filter.pipe';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { IqBoxComponent } from './iq-box/iq-box.component';
     UserListComponent,
     UserCardComponent,
     IqBoxComponent,
+    UserFilterPipe,
 
   ],
   imports: [

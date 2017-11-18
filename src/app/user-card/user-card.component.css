@@ -8,18 +8,24 @@
 }
 
 .avatar{
-    width: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     box-shadow: 0 0 10px;
 }
 
 .name {
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0 20px;
 }
 
 .background{
-    background-color: blue;
-    color: blue;
+    background-color: ghostwhite;
 
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
 }
